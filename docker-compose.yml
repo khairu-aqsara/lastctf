@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+    webserver:
+        image: 'nginx:alpine'
+        working_dir: /application
+        volumes:
+            - '.:/application'
+            - './resources/nginx/nginx.conf:/etc/nginx/conf.d/default.conf'
+        ports:
+            - '9000:80'
+
+    php-fpm:
+        build: resources/php-fpm
+        working_dir: /application
+        volumes:
+            - '.:/application'
+            - './resources/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini'
