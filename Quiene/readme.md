@@ -7,7 +7,7 @@ https://www.cs.cornell.edu/~kt/post/quine/
 sebuah service rasa buah Quine untuk kita semua :)
 
 ```
-nc 103.147.32.234 9001
+nc 103.147.32.214 9001
 ```
 
 <a href="https://mega.nz/file/vipEQI4Z#8ss1daIi4RSIU7sHT9satwrN_n0MIY4T6bv9GZlcMOY" target="_blank">Source Code</a>
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 ### build
 ```
 docker build -t lastctfchal .
-docker run -d -p 9001:9001 --name quinechal lastctfchal
+sudo docker run -d -p 9001:9001 --name quinechal lastctfchal
 ```
 
 versi 1
