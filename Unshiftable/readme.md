@@ -5,8 +5,6 @@ import py_compile
 py_compile.compile('xor.py')
 ```
 
-## Flag
-https://en.internetwache.org/ekoparty-ctf-2015-writeups-24-10-2015/
 ```
 python solve.py
 HxVzdAUPZns7SV95bx5faxlvd18oUF9jXBFsZDcEaDFXGjFuTDF1bgQOMWYWWGJsM30AAA==
